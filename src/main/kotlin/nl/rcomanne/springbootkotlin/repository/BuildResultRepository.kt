@@ -6,5 +6,6 @@ import java.util.*
 
 interface BuildResultRepository : MongoRepository<BuildResult, String> {
     fun findByBuildId(buildId: String): Optional<BuildResult>
+    fun findByApplicationNameAndBuildId(applicationName: String, buildId: String): Optional<BuildResult>
     fun findByApplicationName(applicationName: String): List<BuildResult>
 }

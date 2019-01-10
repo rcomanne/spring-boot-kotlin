@@ -12,7 +12,7 @@ class BuildResultController (val service: BuildResultService) {
     @PostMapping("/")
     fun postBuildResult(@RequestBody @Valid buildResult: BuildResult, bindingResult: BindingResult) {
         if (bindingResult.hasErrors()) throw IllegalArgumentException()
-        service.save(buildResult)
+        service.addBuildResult(buildResult)
     }
 
     @GetMapping("/id/{buildId}")

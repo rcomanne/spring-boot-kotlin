@@ -1,6 +1,6 @@
 package nl.rcomanne.springbootkotlin.config
 
-import nl.rcomanne.springbootkotlin.service.BuildResultHandler
+import nl.rcomanne.springbootkotlin.socket.BuildResultHandler
 import nl.rcomanne.springbootkotlin.socket.ChatHandler
 import org.springframework.context.annotation.Configuration
 import org.springframework.web.socket.config.annotation.EnableWebSocket

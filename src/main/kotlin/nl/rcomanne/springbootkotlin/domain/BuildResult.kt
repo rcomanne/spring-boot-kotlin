@@ -10,6 +10,8 @@ class BuildResult(
         var applicationName: String,
         @NotNull
         @Id
+        var id: Long,
+        @NotNull
         var buildId: String,
         var buildDuration: Long = 0
 )
